@@ -10,8 +10,198 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <h1>HTML Form</h1>
+  <body> 
+    <h1>Welcome to HTML, bro</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method=post">
+      <style>
+        fieldset {
+         margin: 20px; 
+        }
+       </style>
+       <style>
+        input {
+         margin: 10px; 
+        }
+       </style>
+      <fieldset>
+        <legend> 
+          Registration
+        </legend>
+      <label class="form-field">
+        First name, bro:<br>
+        <input 
+          type="text" 
+          id="fname" 
+          name="fname"
+          autocomplete="off" 
+          required>
+      </label><br>
+      <label class="form-field">
+        Last name, bro:<br>
+        <input 
+          type="text" 
+          id="lname" 
+          name="lname" 
+          autocomplete="off"
+          required>
+      </label><br>
+      <label class="form-field">
+        How old are you?<br>
+          <input 
+            type="number" 
+            min="1"
+            max="100" 
+            default value="12"
+            required>
+        </label><br>  
+        <label class="form-field">
+          Date of birth, bro:<br>
+          <input 
+            type="datetime-local"  
+            name="datetime" 
+            required>
+        </label><br>
+        <class="form-field">
+          Email:<br>
+          <input 
+            type="email" 
+            name="email" 
+            required>
+        </label><br>
+        <label class="form-field">
+          Password:<br>
+          <input 
+            type="password" 
+            name="password" 
+            required minlength="5" 
+            maxlength="10"
+            placeholder="Enter 5-10 symbols"
+            pattern="\w+">
+        </label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend> 
+          Little test
+        </legend>
+      <h2>
+        Choose your favorite food:
+      </h2>
+        <label for="pizza">
+          Pizza
+          <input 
+            type="radio" 
+            name="fav_food" 
+            value="Pizza">
+        </label><br>
+        <label for="vareniki">
+          Vareniki
+          <input 
+            type="radio" 
+            name="fav_food" 
+            value="Vareniki">
+        </label><br>
+        <label for="Cheesecake">
+          Cheesecake
+          <input 
+            type="radio" 
+            name="fav_food" 
+            value="Cheescake">
+        </label>
+        <label class="form-field"><br>
+          Favourite time, bro:<br>
+          <input 
+            type="time"  
+            name="time" 
+            required>
+        </label><br>
+        <label class="form-field"><br>
+          Your favorite color, bro:<br>
+          <input 
+            type="color"  
+            name="color" 
+            required>
+        </label><br>  
+        <label class="form-field">
+          Your favorite country:<br>
+          <select name="country" required multiple>
+            <option value="" disabled selected> Choose a country</option>
+            <option value="Italy">Italy</option> 
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="USA">USA</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Egypt">Egypt</option>
+            <option value="China">China</option>
+        </select><br>    
+     <h2><br>
+        Do you like alcohol?
+      </h2>
+        <label for="beer"><br> 
+          How much do you like beer?
+          <input 
+            type="range" 
+            name="beer" 
+            value="beer">
+        </label><br>
+        <label for="brandy"><br> 
+          How much do you like brandy?
+          <input 
+            type="range" 
+            name="brandy" 
+            value="brandy">
+        </label><br>
+      <h2>
+        Choose your favorite sport activity:
+      </h2>  
+        <label for="sport1"> 
+          Rowing
+          <input 
+            type="checkbox" 
+            name="sport1" 
+            value="rowing"
+            >
+        </label><br>
+        <label for="sport2"> 
+          Run
+          <input 
+            type="checkbox" 
+            name="sport2" 
+            value="Run">
+        </label><br>
+        <label for="sport3"> 
+          Gym
+          <input 
+            type="checkbox" 
+            name="sport3" 
+            value="Gym">
+          </label><br>
+        <label for="sport3"> 
+          Soccer
+          <input 
+            type="checkbox" 
+            name="sport3" 
+            value="Gym">
+        </label><br>
+      </fieldset>
+
+        <fieldset>
+          <legend> 
+            End
+          </legend>
+          <h2>Write your comments here:</h2>
+        <label for="textarea"> <br>
+          <textarea  
+            name="textarea"
+            rows="10"
+            cols="50"
+          ></textarea>
+        </label><br>
+          <button type="submit">Sign up </button>
+          <button type="reset">Reset</button>
+        </fieldset>
+    </form>
   </body>
 </html>
