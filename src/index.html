@@ -11,43 +11,33 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body> 
-    <h1>Welcome to HTML, bro</h1>
+    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method=post">
-      <style>
-        fieldset {
-         margin: 20px; 
-        }
-       </style>
-       <style>
-        input {
-         margin: 10px; 
-        }
-       </style>
       <fieldset>
         <legend> 
-          Registration
+          Personal information
         </legend>
       <label class="form-field">
-        First name, bro:<br>
+        Surname:
         <input 
           type="text" 
-          id="fname" 
-          name="fname"
+          name="sname"
+          id="sname" 
           autocomplete="off" 
           required>
       </label><br>
       <label class="form-field">
-        Last name, bro:<br>
+        Name:
         <input 
           type="text" 
-          id="lname" 
           name="lname" 
+          id="lname"
           autocomplete="off"
           required>
       </label><br>
       <label class="form-field">
-        How old are you?<br>
+        How Old are You?
           <input 
             type="number" 
             min="1"
@@ -56,152 +46,114 @@
             required>
         </label><br>  
         <label class="form-field">
-          Date of birth, bro:<br>
+         Full date of birth:
           <input 
-            type="datetime-local"  
-            name="datetime" 
+            type="date"  
+            name="date" 
             required>
         </label><br>
-        <class="form-field">
-          Email:<br>
+        <label class="form-field"> 
+          I accept the term of the agreement
           <input 
+            type="checkbox" 
+            name="accept" 
+            value="accept">
+        </label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend> 
+          Registration
+        </legend>
+        <class="form-field">
+          E-mail:
+        <input 
             type="email" 
             name="email" 
+            placeholder="email@example.com"
             required>
         </label><br>
         <label class="form-field">
-          Password:<br>
+          Password:
           <input 
             type="password" 
             name="password" 
             required minlength="5" 
             maxlength="10"
-            placeholder="Enter 5-10 symbols"
             pattern="\w+">
         </label><br>
       </fieldset>
 
       <fieldset>
         <legend> 
-          Little test
+          An interesting fact about you!
         </legend>
-      <h2>
-        Choose your favorite food:
-      </h2>
-        <label for="pizza">
-          Pizza
+        <label for="love">
+          Do you love cats?
           <input 
             type="radio" 
-            name="fav_food" 
-            value="Pizza">
-        </label><br>
-        <label for="vareniki">
-          Vareniki
-          <input 
-            type="radio" 
-            name="fav_food" 
-            value="Vareniki">
-        </label><br>
-        <label for="Cheesecake">
-          Cheesecake
-          <input 
-            type="radio" 
-            name="fav_food" 
-            value="Cheescake">
+            name="love" 
+            value="Yes">
+          Yes
         </label>
-        <label class="form-field"><br>
-          Favourite time, bro:<br>
+        <label for="not_love">
+          <input 
+            type="radio" 
+            name="not_Love" 
+            value="No">
+          No
+        </label><br>
+        <label class="form-field">
+          What is your favorite color?
+          <input 
+            type="color"  
+            name="color" 
+            required>
+        </label><br>
+        <label class="form-field">
+          What time do you go to bed?
           <input 
             type="time"  
             name="time" 
             required>
         </label><br>
-        <label class="form-field"><br>
-          Your favorite color, bro:<br>
-          <input 
-            type="color"  
-            name="color" 
-            required>
-        </label><br>  
         <label class="form-field">
-          Your favorite country:<br>
-          <select name="country" required multiple>
-            <option value="" disabled selected> Choose a country</option>
-            <option value="Italy">Italy</option> 
-            <option value="Germany">Germany</option>
-            <option value="France">France</option>
-            <option value="USA">USA</option>
-            <option value="Ukraine">Ukraine</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Egypt">Egypt</option>
-            <option value="China">China</option>
+          What are your favorite brand of cars?
+          <select name="car" required multiple>
+            <option value="" disabled selected> Choose a car</option>
+            <option value="BMW">BMW</option> 
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
         </select><br>    
-     <h2><br>
-        Do you like alcohol?
-      </h2>
-        <label for="beer"><br> 
-          How much do you like beer?
+        <label class="form-field">
+          How do you rate our work?
           <input 
             type="range" 
-            name="beer" 
-            value="beer">
-        </label><br>
-        <label for="brandy"><br> 
-          How much do you like brandy?
-          <input 
-            type="range" 
-            name="brandy" 
-            value="brandy">
-        </label><br>
-      <h2>
-        Choose your favorite sport activity:
-      </h2>  
-        <label for="sport1"> 
-          Rowing
-          <input 
-            type="checkbox" 
-            name="sport1" 
-            value="rowing"
-            >
-        </label><br>
-        <label for="sport2"> 
-          Run
-          <input 
-            type="checkbox" 
-            name="sport2" 
-            value="Run">
-        </label><br>
-        <label for="sport3"> 
-          Gym
-          <input 
-            type="checkbox" 
-            name="sport3" 
-            value="Gym">
-          </label><br>
-        <label for="sport3"> 
-          Soccer
-          <input 
-            type="checkbox" 
-            name="sport3" 
-            value="Gym">
+            name="work" 
+            value="work">
         </label><br>
       </fieldset>
 
-        <fieldset>
-          <legend> 
-            End
-          </legend>
-          <h2>Write your comments here:</h2>
+      <fieldset>
+        <legend> 
+          Additional info:
+        </legend>
         <label for="textarea"> <br>
-          <textarea  
-            name="textarea"
-            rows="10"
-            cols="50"
+          Comments
+        <textarea  
+          name="textarea"
+          rows="2"
+          cols="30"
           ></textarea>
         </label><br>
-          <button type="submit">Sign up </button>
-          <button type="reset">Reset</button>
+        <label class="form-field">
+          Would you reccomend us?
+          <select name="reccomend">
+            <option value="Yes">Yes</option> 
+            <option value="Audi">No</option>
+        </select><br>
         </fieldset>
+          <button type="submit">Submit</button>
     </form>
   </body>
 </html>
