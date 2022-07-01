@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,WACE,aAAc,CACd,kBACF,CAEA,sBACE,eACF,CAEA,cACE,kBACF","file":"style.64a8eff1.css","sourceRoot":"..\\src","sourcesContent":[".input-row {\r\n  display: block;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.input-row:last-child {\r\n  margin-bottom: 0;\r\n}\r\n\r\n.inputs-block {\r\n  margin-bottom: 20px;\r\n}\r\n"]}
